@@ -9,4 +9,5 @@
 ##source activate python3
 ##flask run
 source lyrics/bin/activate
-python3 app.py
+nohup python3 app.py &
+tail -f nohup.out
