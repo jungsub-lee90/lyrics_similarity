@@ -14,7 +14,7 @@ model = SentenceTransformer(golden_dir)
 db = pymysql.connect(host='localhost',
                      port=8989,
                      user='admin',
-                     passwd='test!@#$',
+                     passwd='',
                      db='lyrics',
                      charset='utf8'
                       )
@@ -36,7 +36,7 @@ annoy_index.load('ly_index.annoy')
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-# DEVELOPER_KEY = "AIzaSyAsE5XTahOLeXzmBf87dsf8PpcTSywfNzw"
+# DEVELOPER_KEY = ""
 # YOUTUBE_API_SERVICE_NAME = "youtube"
 # YOUTUBE_API_VERSION = "v3"
 
