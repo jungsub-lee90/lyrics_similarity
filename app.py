@@ -91,7 +91,7 @@ def search():
                 result = cursor.fetchall()  
         except Exception as e:
             print(f"Database error: {e}")
-            flash("There was an error with the database query.")
+            flush("There was an error with the database query.")
             return render_template('main0.html')
         finally:
             cursor.close()
